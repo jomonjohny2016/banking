@@ -1,0 +1,31 @@
+<h1 class="fs-3 mt-3 ms-3">Hi {{data}}</h1>
+<div class="col-6 w-100">
+    <i class="fa-solid fa-building-columns fa-flip"></i>
+    <div id="s1" class="text-center">
+        <h3></h3>
+        <br>
+        
+        <div class="bg-light w-50">
+            <div class="text-center">SIGN IN</div>
+            <div class="mt-2 p-2">
+                <input id="log1" class="form-control" type="text" [placeholder]="pdata">
+            </div>
+            <div class="mt-2 p-2">
+                <input id="log2" class="form-control" type="password" placeholder="password">
+            </div>
+            <div class="mt-2 p-2">
+                <button (click)="login()" class="btn btn-outline-primary w-25">Login</button>
+            </div>
+            <div class="mt-2 p-2">
+                <a href="#">forgot password?</a>
+            </div>
+            <div class="mt-2 p-2">
+                <p>don't have an account<a href="#">create account</a></p>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+<div class="col-6"></div>
+

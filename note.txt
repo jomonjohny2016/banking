@@ -1,0 +1,28 @@
+Data Binding in Angular
+_________________________________
+
+html  - view
+
+ts -- component file
+
+
+1- one way binding 
+At a time one direction only is supported
+  
+    1. component to view binding(ts to html binding)
+          
+          1. string interpollation - ts file data to string type for display in html {{}}
+          2. property binding - [propertyName]="data" - for giving attribute value or data
+
+    2. view to component binding(html to ts)      
+          
+          1. event binding  (eventName)="method()" 
+
+
+
+
+life cycle block of angular component
+_____________________________________
+
+
+constructor -> ngOnInit -> other methods (by our function calling)

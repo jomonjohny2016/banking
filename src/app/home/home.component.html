@@ -1,0 +1,68 @@
+
+<div class="container">
+    <button class="btn btn-primary w-25" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">View Profile</button>
+    <br>
+    <button class="btn btn-warning w-25" type="button"data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Balance Enquiry</button>
+    <br>
+    <button class="btn btn-success w-25" type="button">Money Transfer</button>
+    <br>
+    <button class="btn btn-danger w-25" type="button">Account Statement</button>
+    <br>
+    
+    <button type="button">Log Out</button>
+    <br>
+    <button type="button">Delete Account</button>
+    <br>
+    <button type="button"></button>
+    
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" class="text-center">
+          <img class="w-50" src="https://i.postimg.cc/1X9BQDS8/username.jpg" alt="">
+            <h3>USER NAME : Name</h3>
+            <h3>Account Number : 1234</h3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h3 class="offcanvas-title" id="offcanvasExampleLabel">Balance Details</h3>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <img src="" alt="">
+        <div><strong>Hi , User Name</strong></div>
+        Your current balance in the account number 1234 is  
+        <div>
+            <strong>Balance is 1000</strong>
+        </div>
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
