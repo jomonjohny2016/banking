@@ -17,7 +17,12 @@ At a time one direction only is supported
     2. view to component binding(html to ts)      
           
           1. event binding  (eventName)="method()" 
+          2. $event binding (eventName)="method($event)"
+          3. event binding using template rendering variable- #variable
 
+
+2- Two way binding
+    1. NgModel -[(ngModel)]="variable"  - FormsModule
 
 
 
@@ -26,3 +31,7 @@ _____________________________________
 
 
 constructor -> ngOnInit -> other methods (by our function calling)
+
+
+
+package - module - class(methods)/function/data/variable

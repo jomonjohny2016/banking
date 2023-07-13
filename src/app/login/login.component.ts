@@ -8,9 +8,24 @@ import { Component } from '@angular/core';
 export class LoginComponent {
 data ="Happy Banking with us...."
 pdata="Enter Account Number"
+acno:string =""
+psw:string=""
 
+login(a:any , b:any) {
+  this.acno=a.value
+  this.psw=b.value
+  console.log(this.acno);
+  console.log(this.psw);
+  
+  
+}
 
-login(){
-  alert("login clicked")
+acnoChange(event:any){
+  this.acno=(event.target.value);
+  console.log(this.acno);
+  
+}
+passChange(event:any){
+  console.log(event.target.value);
 }
 }

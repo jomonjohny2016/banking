@@ -1,20 +1,20 @@
-<h1 class="fs-3 mt-3 ms-3">Hi {{data}}</h1>
+<h1 class="fs-3 mt-3 ms-3">Hi, {{data}}</h1>
 <div class="col-6 w-100">
     <i class="fa-solid fa-building-columns fa-flip"></i>
-    <div id="s1" class="text-center">
+    <div id="" class="text-center">
         <h3></h3>
         <br>
         
         <div class="bg-light w-50">
-            <div class="text-center">SIGN IN</div>
+            <div class="text-center"><h1>SIGN IN</h1></div>
             <div class="mt-2 p-2">
-                <input id="log1" class="form-control" type="text" [placeholder]="pdata">
+                <input #acno (change)="acnoChange($event)" id="log1" name="acno" class="form-control" type="text" [placeholder]="pdata">
             </div>
             <div class="mt-2 p-2">
-                <input id="log2" class="form-control" type="password" placeholder="password">
+                <input #psw (change)="passChange($event)" id="log2" name="password" class="form-control" type="password" placeholder="password">
             </div>
             <div class="mt-2 p-2">
-                <button (click)="login()" class="btn btn-outline-primary w-25">Login</button>
+                <button (click)="login(acno,psw)" class="btn btn-outline-primary w-25">Login</button>
             </div>
             <div class="mt-2 p-2">
                 <a href="#">forgot password?</a>
